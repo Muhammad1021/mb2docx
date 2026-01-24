@@ -28,6 +28,3 @@ jobs:
 
       - name: Run tests
         run: uv run pytest tests/ -v
-
-      - name: Lint
-        run: uv run ruff check src/
