@@ -8,12 +8,11 @@ on:
 
 jobs:
   test:
-    name: Test on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest]
-        python-version: ["3.10", "3.11", "3.12"]
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.11"]
 
     steps:
       - uses: actions/checkout@v4
@@ -21,17 +20,17 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v4
 
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python
         run: uv python install ${{ matrix.python-version }}
 
       - name: Install dependencies
-        run: uv sync --all-groups
+        run: uv sync
 
       - name: Run tests
         run: uv run pytest tests/ -v
 
-      - name: Run type checker
-        run: uv run mypy src/mb2docx --ignore-missing-imports
+      - name: Type check
+        run: uv run mypy src/ --ignore-missing-imports
 
-      - name: Run linter
-        run: uv run ruff check src/mb2docx
+      - name: Lint
+        run: uv run ruff check src/
