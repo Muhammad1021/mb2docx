@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.21.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mb2docx"
+version = "9.2.0"
+description = "Convert AI markdown-box CV/CL text into ATS-friendly .docx (Windows 10+ local GUI + CLI)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Pawel Zawadzki"}]
+dependencies = [
+    "python-docx>=1.2.0",
+]
+
+[project.scripts]
+mb2docx = "mb2docx.cli:main"
+
+[project.gui-scripts]
+mb2docx-gui = "mb2docx.gui:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mb2docx"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+    "mypy>=1.10.0",
+    "pyinstaller>=6.0.0",
+]
